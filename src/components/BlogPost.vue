@@ -29,16 +29,30 @@
     }
 </script>
 <template>
-    <div id="blog-post">
-        <h1>{{ post.data.title }}</h1>
-        <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
-        <div v-html="post.data.body"></div>
+    <div>
+        <div id="blog-post">
+            <app-header></app-header>
+            <div id='spacing'></div>
+            <h1>{{ post.data.title }}</h1>
+            <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
+            <div v-html="post.data.body"></div>
 
-        <router-link v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug" class="button">
-            {{ post.meta.previous_post.title }}
-        </router-link>
-        <router-link v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug" class="button">
-            {{ post.meta.next_post.title }}
-        </router-link>
+            <router-link style="text-decoration: none" v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug" class="button">
+                <!--{{ post.meta.previous_post.title }}-->Previous&nbsp
+            </router-link>
+            <router-link style="text-decoration: none" v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug" class="button">
+                <!--{{ post.meta.next_post.title }}-->Next
+            </router-link>
+        </div>
+
     </div>
 </template>
+<style>
+    #blog-post {
+        font-size: 20px;
+    }
+
+    #spacing {
+        height: 100px;
+    }
+</style>

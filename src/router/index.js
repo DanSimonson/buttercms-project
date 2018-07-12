@@ -3,8 +3,11 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import BlogHome from '@/components/BlogHome'
 import BlogPost from '@/components/BlogPost'
-
+import Projects from '@/components/Projects'
+import Contact from '@/components/Contact'
 Vue.use(Router)
+
+
 
 export default new Router({
   mode: 'history',
@@ -13,6 +16,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects
+    },
+    {
+      path: '/contact/',
+      name: 'contact',
+      component: Contact
     },
     {
       path: '/blog/',
@@ -24,5 +37,6 @@ export default new Router({
       name: 'blog-post',
       component: BlogPost
     }
-  ]
+  ],
 })
+
