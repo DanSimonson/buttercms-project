@@ -86,6 +86,7 @@
     </div>-->
 </template>
 <script>
+    //console.log({{ site.url }}, {{ page.url }})
     export default {
         name: 'projects',
         data() {
@@ -95,6 +96,18 @@
                 ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim
                 in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`,
                 cards: [
+                    {
+                        title: 'vue/axios', link: 'http://extra-small-stick.surge.sh',
+                        text: 'Goal: Build Hacker-News Clone. Technologies: Vue, Axios, Firestore, JavaScript, ES6',
+                        src: "https://cdn.buttercms.com/cJPqFLNdSyaK30Bw7kbN", flex: 6
+
+                    },
+                    {
+                        title: 'CRUD App', link: 'https://human-resources-cb42b.firebaseapp.com/',
+                        text: 'Goal: Store and update client information. Technologies: Vue, Firestore, Bootstrap 4, JavaScript, ES6',
+                        src: "https://res.cloudinary.com/dmglopmul/image/upload/v1531890965/mariposaImageP.jpg", flex: 6
+
+                    },
                     {
                         title: 'Spa Website', link: 'https://user-info-ee17c.firebaseapp.com/',
                         text: 'Goal: User can view spa business website. Technologies: Vue, Firestore, MaterializeCSS, Vuetify, JavaScript, ES6',
@@ -106,7 +119,7 @@
                         src: "https://res.cloudinary.com/dmglopmul/image/upload/v1529491072/recipeBox.jpg", flex: 6
                     },
                     {
-                        title: 'Markdown Previewer', link: "http://mellow-sock.surge.sh/",
+                        title: 'Markdown Peek', link: "http://mellow-sock.surge.sh/",
                         text: "Goal: User can type GitHub-flavored Markdown into a text area. User can see a preview of the output of his or her markdown that is updated as he or she types Technologies: ES6, React, CSS3, Javascript",
                         src: 'https://res.cloudinary.com/dmglopmul/image/upload/v1529501983/markdown.png', flex: 6
                     },
@@ -122,7 +135,7 @@
 
                     },
                     {
-                        title: 'Wikipedia Search Engine', link: 'https://dansimonson.github.io/wikiviewer/',
+                        title: 'Wikipedia Search', link: 'https://dansimonson.github.io/wikiviewer/',
                         text: 'Goal: Learn new stuff with a wikipedia search engine that uses the Wikipedia api Technologies: Javascript, CSS3, HTML',
                         src: 'https://res.cloudinary.com/dmglopmul/image/upload/v1529506690/wikipedia.jpg', flex: 6
                     },
@@ -148,12 +161,12 @@
                         src: 'https://res.cloudinary.com/dmglopmul/image/upload/v1529508887/tictactoe.jpg', flex: 6
                     },
                     {
-                        title: 'Random Quote Machine', link: 'https://dansimonson.github.io/randomquotemachine/#',
+                        title: 'Random Quotes', link: 'https://dansimonson.github.io/randomquotemachine/#',
                         text: 'Goal: An online random quote generator that can tweet. Technologies: Javascript, CSS3, HTML',
                         src: 'https://res.cloudinary.com/dmglopmul/image/upload/v1529509063/quote.jpg', flex: 6
                     },
                     {
-                        title: 'Procrastinator todo list', link: 'https://todolistforprocrastinators.herokuapp.com/todo',
+                        title: 'todo list', link: 'https://todolistforprocrastinators.herokuapp.com/todo',
                         text: 'Goal: Full stack app with Javascript on the front end and Express and MongoDB running in the background. App deployed on Heroku. Technologies: Javascript, CSS3, HTML',
                         src: 'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg', flex: 6
                     }

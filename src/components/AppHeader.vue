@@ -69,8 +69,8 @@
     it is not scoped*/
 
     .btn__content::before {
-        background: black;
-        border-radius: 8px;
+        /*background: black;
+        border-radius: 8px;*/
     }
 
     .strngBtn {

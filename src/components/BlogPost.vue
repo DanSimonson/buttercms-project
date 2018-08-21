@@ -1,5 +1,6 @@
 <script>
     import butter from '@/buttercms'
+
     export default {
         name: 'blog-post',
         data() {
@@ -25,6 +26,10 @@
         },
         created() {
             this.getPost()
+            /*var url = "https://mariposaweb.net"
+            var slug = window.location.pathname;
+            var urlSlug = url + slug;
+            console.log(urlSlug);*/
         }
     }
 </script>
@@ -44,6 +49,7 @@
                 <!--{{ post.meta.next_post.title }}-->Next
             </router-link>
         </div>
+
 
     </div>
 </template>
