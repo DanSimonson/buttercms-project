@@ -1,6 +1,4 @@
 <script>
-
-
     import butter from '@/buttercms'
     export default {
         name: 'blog-home',
@@ -49,8 +47,6 @@
     changeColor();
     //Animate every 6 seconds
     setInterval(changeColor, 6000);
-
-
 </script>
 
 <template>

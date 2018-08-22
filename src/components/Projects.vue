@@ -86,7 +86,6 @@
     </div>-->
 </template>
 <script>
-    //console.log({{ site.url }}, {{ page.url }})
     export default {
         name: 'projects',
         data() {

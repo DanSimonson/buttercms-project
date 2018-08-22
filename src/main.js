@@ -9,8 +9,11 @@ import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 Vue.component("app-footer", AppFooter);
 Vue.component("app-header", AppHeader);
+import VueDisqus from "vue-disqus";
 
+Vue.use(VueDisqus);
 Vue.use(Vuetify);
+
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
